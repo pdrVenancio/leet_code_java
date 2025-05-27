@@ -7,7 +7,6 @@ public class Longest_Substring {
 
         for (int i = 0; i < s.length(); i++) {
             if(letras.contains(s.charAt(i))){
-                //letras.clear();
                 letras = new ArrayList<>(letras.subList(letras.indexOf(s.charAt(i)) + 1, letras.size()));
             }
             letras.add(s.charAt(i));
